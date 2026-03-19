@@ -1,0 +1,169 @@
+.retete-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.reteta-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.reteta-card:hover {
+  transform: scale(1.03);
+}
+
+.reteta-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.reteta-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.reteta-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 0.25rem 0;
+}
+
+.tari-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.tara-card {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  min-height: 180px;
+}
+
+.tara-card:hover {
+  transform: scale(1.05);
+  background-color: #f8f8f8;
+}
+
+.tara-card img {
+  width: 130px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+}
+
+.tara-card h3 {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.retete-section {
+  padding: 2rem;
+}
+
+.back-button {
+  background-color: #ff5e5e;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.back-button:hover {
+  background-color: #e34949;
+}
+
+.retete-titlu {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.retete-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.reteta-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.reteta-card:hover {
+  transform: scale(1.02);
+}
+
+.reteta-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.reteta-content {
+  padding: 1rem;
+  text-align: left;
+}
+
+.reteta-content h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.reteta-content p {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 0.3rem 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ff6b6b;
+  margin: 8px auto 0;
+  border-radius: 4px;
+}
+
+

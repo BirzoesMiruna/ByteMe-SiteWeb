@@ -1,0 +1,15 @@
+<h2 class="titlu">Whishlist-ul tau</h2>
+
+<div *ngIf="whishlist.length === 0">
+  <p>Momentan nu există rețete disponibile.</p>
+</div>
+
+<div class="retete-container" *ngIf="whishlist.length > 0">
+  <div class="reteta-card" *ngFor="let r of whishlist">
+    <img [src]="r.imagineUrl" [alt]="r.titlu" />
+    <h3>{{ r.titlu }}</h3>
+    <p><strong>Descriere:</strong> {{ r.descriere }}</p>
+    <p><strong>Ingrediente:</strong> {{ r.ingrediente }}</p>
+    <button (click)="stergeDinWishlist(r)">Șterge din wishlist</button>
+  </div>
+</div>

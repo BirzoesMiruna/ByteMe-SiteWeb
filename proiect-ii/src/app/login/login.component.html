@@ -1,0 +1,41 @@
+<div class="login-wrapper">
+  <div class="login-card">
+    <img src="assets/logo14.png" alt="ByteMe Logo" class="login-logo" />
+
+    <h2>Autentificare</h2>
+
+    <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          [(ngModel)]="email"
+          required
+          placeholder="exemplu@email.com"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="parola">Parolă</label>
+        <input
+          type="password"
+          id="parola"
+          name="parola"
+          [(ngModel)]="parola"
+          required
+          placeholder="••••••••"
+        />
+      </div>
+
+      <button type="submit" class="login-button">Login</button>
+
+      <p class="login-message" *ngIf="mesaj">{{ mesaj }}</p>
+    </form>
+
+    <p class="forgot-password">
+      <a href="#" (click)="goToResetPassword($event)">Ai uitat parola?</a>
+    </p>
+  </div>
+</div>

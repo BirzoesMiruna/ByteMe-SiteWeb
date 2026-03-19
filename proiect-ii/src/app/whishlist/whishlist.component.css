@@ -1,0 +1,78 @@
+/* Stil pentru titlu */
+.titlu {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #333;
+}
+
+/* Mesaj pentru lista goală */
+div:has(> p) {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+/* Containerul pentru rețete */
+.retete-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Card individual pentru rețetă */
+.reteta-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.reteta-card:hover {
+  transform: scale(1.03);
+}
+
+/* Imaginea rețetei */
+.reteta-card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+/* Titlul rețetei */
+.reteta-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+/* Descriere și ingrediente */
+.reteta-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 0.25rem 0;
+}
+.reteta-card button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reteta-card button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}

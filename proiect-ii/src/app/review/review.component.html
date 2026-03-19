@@ -1,0 +1,4 @@
+<div *ngFor="let review of reviews">
+    <p>{{ review.comment }}</p>
+    <p>{{ review.date | date: 'dd/MM/yyyy' }}</p> <!-- Folosește DatePipe pentru formatul datei -->
+  </div>

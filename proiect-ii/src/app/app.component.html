@@ -1,0 +1,60 @@
+<!-- Navbar -->
+<header>
+  <div class="container nav-container">
+    <div class="nav-left">
+      <a class="logo" routerLink="/">
+        <img src="assets/logo14.png" alt="ByteMe Logo" class="logo-img">
+      </a>
+    </div>
+
+    <div class="nav-right">
+   <ul class="nav-links">
+  <li><a routerLink="/" routerLinkActive="active">Pagina Home</a></li>
+  <li><a routerLink="/desprenoi" routerLinkActive="active">Despre Noi</a></li>
+  <li><a routerLink="/retete" routerLinkActive="active">Rețete</a></li>
+
+  <ng-container *ngIf="!userName">
+    <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+  </ng-container>
+
+  <ng-container *ngIf="userName">
+    <li><a routerLink="/contul-meu" routerLinkActive="active">Contul meu</a></li>
+    <li><a href="#" (click)="logout()">Logout</a></li>
+  </ng-container>
+
+  <li><a routerLink="/whishlist" routerLinkActive="active">Wishlist</a></li>
+</ul>
+
+    </div>
+  </div>
+</header>
+
+<!-- Pagina activă -->
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+
+    <div class="footer-logo">
+      <img src="assets/logo2.png" alt="ByteMe Logo" class="footer-logo-img">
+    </div>
+    <ul class="footer-links">
+      <li><a href="#" (click)="openInNewTab('/desprenoi')">Despre noi</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      <li><a routerLink="/termeni" routerLinkActive="active">Termeni și Condiții</a></li>
+      <li><a routerLink="/confidentialitate" routerLinkActive="active">Politica de Confidențialitate</a></li>
+    </ul>
+
+    <p class="copyright">
+      © 2025 ByteMeLikeYouDo. Toate drepturile rezervate.
+    </p>
+
+  </div>
+</footer>
+
+
+<!-- Scroll to Top Button -->
+<button id="scrollBtn" title="Înapoi sus" (click)="scrollToTop()">↑</button>

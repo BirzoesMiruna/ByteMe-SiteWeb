@@ -1,0 +1,12 @@
+<div *ngIf="reteta" class="detalii-container">
+  <h2 class="titlu-reteta">{{ reteta.titlu }}</h2>
+
+  <div class="detalii-card">
+    <img [src]="reteta.imagineUrl" alt="{{ reteta.titlu }}" class="reteta-imagine" />
+
+    <div class="reteta-info">
+      <p><strong>Descriere:</strong> {{ reteta.descriere }}</p>
+      <p><strong>Ingrediente:</strong> {{ reteta.ingrediente }}</p>
+    </div>
+  </div>
+</div>

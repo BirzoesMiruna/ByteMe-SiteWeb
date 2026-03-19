@@ -1,0 +1,27 @@
+<!-- Afișează lista țărilor -->
+<div *ngIf="!taraSelectata">
+  <h2>Alege o Țară:</h2>
+  <div class="tari-grid">
+    <div *ngFor="let tara of tari" class="tara-card" (click)="onSelectTara(tara.id)">
+      <img [src]="getSteagUrl(tara.nume)" alt="{{ tara.nume }}" width="100">
+      <h3>{{ tara.nume }}</h3>
+    </div>
+  </div>
+</div>
+
+<!-- Afișează rețetele din țara selectată -->
+<div *ngIf="taraSelectata" class="retete-section">
+  <button class="back-button" (click)="backToTari()">← Înapoi la Țări</button>
+  <h2 class="retete-titlu">Rețetele din această țară</h2>
+
+  <div class="retete-grid">
+    <div *ngFor="let reteta of retete" class="reteta-card">
+      <img [src]="reteta.imagineUrl" alt="{{ reteta.titlu }}" />
+      <div class="reteta-content">
+        <h3>{{ reteta.titlu }}</h3>
+        <p><strong>Descriere:</strong> {{ reteta.descriere }}</p>
+        <p><strong>Ingrediente:</strong> {{ reteta.ingrediente }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+﻿## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build results
+bin/
+obj/
+Debug/
+Release/
+
+## Nu include fișiere temporare și logs
+*.log
+*.tmp
+*.bak
+
+## Nu include fișiere cache
+*.dbmdl
+*.cache
+*.vsidx
+
+## Nu urca fișierele generate de runtime-ul ASP.NET
+*.deps.json
+*.runtimeconfig.json
+
+## Nu urca secretele locale
+appsettings.Development.json
+
+## SQL Server și EF
+##*.mdf
+##*.ldf
+##Migrations/
+
+## Optional: Nu urca fișierele SQLite sau alte baze de date locale
+*.sqlite
+*.db
+
+## Node/NPM (dacă folosești frontend)
+node_modules/
+
+## JetBrains Rider/Resharper (dacă folosești)
+.idea/
+*.DotSettings.user

@@ -1,0 +1,46 @@
+<!-- home.component.html -->
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Descoperă Arome Unice</h1>
+    <p>Cele mai delicioase rețete pentru orice ocazie</p>
+    <a routerLink="/retete" class="btn">Explorează Rețete</a>
+
+  </div>
+</section>
+
+<!-- Featured Recipes -->
+<section class="featured">
+  <div class="container">
+    <div class="section-title">
+      <h2>Rețete Recomandate</h2>
+    </div>
+    <div class="recipes-grid">
+      <a
+        *ngFor="let reteta of reteteRecomandate"
+        class="recipe-card"
+        [routerLink]="['/reteta', reteta.id]"
+        style="text-decoration: none; color: inherit;"
+      >
+        <div class="recipe-img">
+          <img [src]="reteta.imagineUrl" [alt]="reteta.titlu">
+        </div>
+        <div class="recipe-info">
+          <h3>{{ reteta.titlu }}</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+  <div class="container">
+    <h2>Fii la curent cu noile rețete!</h2>
+    <form>
+      <input type="email" placeholder="Introdu emailul tău">
+      <button type="submit" class="btn">Abonează-te</button>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,6 @@
+.vs/
+node_modules/
+.angular/
+bin/
+obj/
+dist/
